@@ -1,6 +1,6 @@
 # owncloud-terraform
 Owncloud-terraform-aws - Finish project, for testing purporse.
-
+Owner - Marina M.
 
 Installation OwnCloud on AWS via terraform.
  

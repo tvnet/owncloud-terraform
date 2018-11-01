@@ -67,3 +67,6 @@ Run sudo docker-compose up -d  (in the same folder, where is docker-compose.yml)
 
 
 11. From your local (dnspublic should be manually changed) mashine use http://dnspublic/80 or http://dnspublic/8080
+
+12. If you don't use and don't need, from local machine destroy instance:
+      terraform destroy

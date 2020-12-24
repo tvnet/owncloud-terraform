@@ -14,12 +14,10 @@ Owner - Marina M.
 * Linux Ubuntu 16
 
 <h2> Action </h2>
-  1. Create a folder mkdir for terraform project
-mkdir terrformowncloud
-
-  1. Copy their main.tf, vars.tf and provision.sh
-
-  1. Fill in variables in vars.tf
+1. Create a folder mkdir for terraform project
+  mkdir terrformowncloud
+1. Copy their main.tf, vars.tf and provision.sh
+   Fill in variables in vars.tf
 
 1. In terraform project folder, use Linux terminal and write command and press Enter:
  * terraform init

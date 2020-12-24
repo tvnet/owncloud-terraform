@@ -16,10 +16,10 @@ Owner - Marina M.
 <h2> Action </h2>
 1. Create a folder mkdir for terraform project
   mkdir terrformowncloud
-1. Copy their main.tf, vars.tf and provision.sh
+2. Copy their main.tf, vars.tf and provision.sh
    Fill in variables in vars.tf
 
-1. In terraform project folder, use Linux terminal and write command and press Enter:
+3. In terraform project folder, use Linux terminal and write command and press Enter:
  * terraform init
  
 Waiting plugin aws will be downloaded.
@@ -31,9 +31,9 @@ If there is no issues, use the next command
 * terraform apply
 
 
-1. When terraform is installed, login to your AWS account and check if you have been added with a proper security group, if no, manualy put checks for Owncloud security group
+4. When terraform is installed, login to your AWS account and check if you have been added with a proper security group, if no, manualy put checks for Owncloud security group
 
-1. Via Linux console login via ssh *.pem file to your created environment and check docker version
+5. Via Linux console login via ssh *.pem file to your created environment and check docker version
 
  * docker -version
 
@@ -43,11 +43,11 @@ Doing it by command, change location pem file /path/to/ssh, and username and dns
 
  * scp  ./provision.sh -i /path/to/ssh username@dnspublicname:/tmp/provision.sh
  
-1. Login to aws instance via ssh
+6. Login to aws instance via ssh
  
  * ssh -i /path/to/ssh username@dnspublicname
  
-1.  Script should run on AWS, so go to folder tmp:
+7.  Script should run on AWS, so go to folder tmp:
 
 * cd /tmp/
 
@@ -56,15 +56,15 @@ Doing it by command, change location pem file /path/to/ssh, and username and dns
  
  Change on your variables. 
 
-1. Go to folder 
+8. Go to folder 
 cd ~ 
 
 Run sudo docker-compose up -d  (in the same folder, where is docker-compose.yml).
 
-10. Check docker ps -a (if all necessary docker images are running)
+9. Check docker ps -a (if all necessary docker images are running)
 
 
-11. From your local (dnspublic should be manually changed) mashine use http://dnspublic/80 or http://dnspublic/8080
+10. From your local (dnspublic should be manually changed) mashine use http://dnspublic/80 or http://dnspublic/8080
 
 12. If you don't use and don't need, from local machine destroy instance:
       terraform destroy
